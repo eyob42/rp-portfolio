@@ -28,6 +28,8 @@ ALLOWED_HOSTS = ['.onrender.com', 'localhost', '127.0.0.1']
 # APPLICATIONS
 # ------------------------------------------------------------
 INSTALLED_APPS = [
+    'cloudinary',
+    'cloudinary_storage',
     'pages.apps.PagesConfig',
     'projects.apps.ProjectsConfig',
     'django.contrib.admin',
@@ -121,3 +123,5 @@ MEDIA_ROOT = BASE_DIR / 'uploads'
 # DEFAULT PRIMARY KEY FIELD TYPE
 # ------------------------------------------------------------
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
